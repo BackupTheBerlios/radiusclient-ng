@@ -1,5 +1,5 @@
 # 
-#  $Id: configure.in,v 1.27 2007/02/05 11:45:43 janakj Exp $
+#  $Id: configure.in,v 1.28 2007/02/05 12:54:03 janakj Exp $
 # 
 #  Copyright (C) 1996,1997 Lars Fenneberg
 # 
@@ -21,7 +21,7 @@ case "$target" in
 	;;
 esac
 
-AM_INIT_AUTOMAKE(radiusclient-ng, 0.5.4)
+AM_INIT_AUTOMAKE(radiusclient-ng, 0.5.5)
 
 LIBVERSION=2:0:0
 AC_SUBST(LIBVERSION)
@@ -223,7 +223,6 @@ include/Makefile lib/Makefile src/Makefile man/Makefile etc/Makefile
 doc/Makefile patches/Makefile
 login.radius/Makefile login.radius/migs/Makefile
 rpm/Makefile
-debian/Makefile
 ])
 AC_CONFIG_COMMANDS([default],[[test -z "$CONFIG_HEADERS" || echo timestamp > stamp-h]],[[]])
 AC_OUTPUT
