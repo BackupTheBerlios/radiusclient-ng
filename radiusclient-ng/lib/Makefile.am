@@ -1,5 +1,5 @@
 #
-# $Id: Makefile.am,v 1.4 2005/11/07 23:12:09 sobomax Exp $
+# $Id: Makefile.am,v 1.5 2007/02/05 13:02:08 janakj Exp $
 #
 # Copyright (C) 1995,1997,1998 Lars Fenneberg
 #
@@ -21,5 +21,5 @@ CLEANFILES = *~
 lib_LTLIBRARIES = libradiusclient-ng.la
 libradiusclient_ng_la_SOURCES = buildreq.c clientid.c env.c sendserver.c \
 	avpair.c config.c dict.c ip_util.c log.c md5.c util.c lock.c \
-	options.h
+	options.h md5.h
 libradiusclient_ng_la_LDFLAGS = -version-info $(LIBVERSION)
