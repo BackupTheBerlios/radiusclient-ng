@@ -2430,7 +2430,7 @@ fi
 
 # Define the identity of the package.
  PACKAGE=radiusclient-ng
- VERSION=0.5.5
+ VERSION=0.5.5.1
 
 
 cat >>confdefs.h <<_ACEOF
