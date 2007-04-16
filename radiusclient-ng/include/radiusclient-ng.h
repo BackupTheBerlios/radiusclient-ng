@@ -1,5 +1,5 @@
 /*
- * $Id: radiusclient-ng.h,v 1.5 2006/05/17 18:14:35 sobomax Exp $
+ * $Id: radiusclient-ng.h,v 1.6 2007/04/16 20:27:32 sobomax Exp $
  *
  * Copyright (C) 1995,1996,1997,1998 Lars Fenneberg
  *
@@ -360,6 +360,7 @@ typedef struct value_pair
 #define ERROR_RC	-1
 #define OK_RC		0
 #define TIMEOUT_RC	1
+#define REJECT_RC	2
 
 typedef struct send_data /* Used to pass information to sendserver() function */
 {
