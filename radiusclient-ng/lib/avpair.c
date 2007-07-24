@@ -1,5 +1,5 @@
 /*
- * $Id: avpair.c,v 1.17 2006/05/30 19:18:03 sobomax Exp $
+ * $Id: avpair.c,v 1.18 2007/07/24 00:16:16 sobomax Exp $
  *
  * Copyright (C) 1995 Lars Fenneberg
  *
@@ -183,7 +183,7 @@ rc_avpair_gen(rc_handle *rh, VALUE_PAIR *pair, unsigned char *ptr,
 		goto shithappens;
 	}
 	attrlen = ptr[1];
-	if (length < attrlen) {
+	if (length < attrlen || attrlen < 2) {
 		rc_log(LOG_ERR, "rc_avpair_gen: received attribute with "
 		    "invalid length");
 		goto shithappens;
