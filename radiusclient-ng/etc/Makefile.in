@@ -15,7 +15,7 @@
 @SET_MAKE@
 
 #
-# $Id: Makefile.in,v 1.15 2007/02/05 13:02:08 janakj Exp $
+# $Id: Makefile.in,v 1.16 2007/08/01 23:52:27 sobomax Exp $
 #
 # Copyright (C) 1997,1998 Lars Fenneberg
 #
@@ -390,7 +390,7 @@ install-data-local: servers
         $(INSTALL) -m 600 $(srcdir)/servers $(DESTDIR)$(pkgsysconfdir)/servers
 
 uninstall-local:
-	rm -f $(pkgsysconfdir)/servers
+	rm -f $(DESTDIR)$(pkgsysconfdir)/servers
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
